@@ -113,7 +113,7 @@ async function saveToLocalStorage(id) {
 function addToWatchlist(event) {
     const addIcon = `img/watchlist-plus-icon.png`;
     const removeIcon = `img/watchlist-minus-icon.png`;
-    const baseUrl = `https://ant4x.github.io/`;
+    const baseUrl = `https://ant4x.github.io/movie-watchlist/`;
 
     if (event.target.children[0].src === baseUrl + addIcon) {
         event.target.children[0].src = baseUrl + removeIcon
