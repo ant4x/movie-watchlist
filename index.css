@@ -93,7 +93,7 @@ header a:hover {
     width: 90%;
     align-self: center;
     position: absolute;
-    top: 132px;
+    top: 135px;
     right: 5%;
     z-index: 1;
 }
@@ -325,16 +325,16 @@ h2.movie-name {
         padding: 0 2em;
     }
 
-    .search-block {
-        top: 111px;
-    }
-
     header h1 {
         margin: 0;
     }
 
     header a {
         margin-top: 6px;
+    }
+
+    .search-block {
+        top: 118px;
     }
 
     .movie-container {

@@ -31,20 +31,23 @@ function fetchDetailedMoviesData(ids) {
             if (idData.Poster === "N/A") {
                 idData.Poster = `./img/nice-background.jpg`
             };
-            const { Title, Runtime, Genre, Poster, imdbRating, Plot, imdbID } = idData;
-            moviesData.push({
-                Title,
-                Runtime,
-                Genre,
-                Poster,
-                imdbRating,
-                Plot,
-                imdbID
-            })
+            if (idData.imdbID) {
+                const { Title, Runtime, Genre, Poster, imdbRating, Plot, imdbID } = idData;
+                moviesData.push({
+                    Title,
+                    Runtime,
+                    Genre,
+                    Poster,
+                    imdbRating,
+                    Plot,
+                    imdbID
+                })
+            }
             return displayMoviesDataHtml(moviesData)
         })
     } catch (err) {
-        console.log('Error:', err);
+        console.log("Something went wrong, here's how: ", err);
+        renderNothingFoundMessage()
     }
 }
 
