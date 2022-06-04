@@ -188,7 +188,6 @@ main {
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid #E5E7EB;
-    /* border: 1px solid black; */
     color: #111827;
 }
 
@@ -269,6 +268,7 @@ h2.movie-name {
     color: #6B7280;
 }
 
+/* media queries */
 @media (min-width: 0px) {
 
     html,
@@ -392,31 +392,3 @@ h2.movie-name {
         letter-spacing: 0.5px;
     }
 }
-
-//css + icon 
-
-/* .add-to-watchlist strong {
-        display: flex;
-        font-weight: 800;
-        font-size: 0.8rem;
-        align-items: center;
-        justify-content: center;
-        margin-right: 0.6em;
-        color: white;
-        z-index: 0;
-    }
-    
-    .add-to-watchlist strong::before {
-        content: '';
-        border: 1px solid black;
-        border-radius: 50%;
-        background-color: black;
-        width: 1em;
-        height: 1em;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        z-index: -1;
-    } */
